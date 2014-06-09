@@ -10,12 +10,12 @@ python ngrams_generate.py -s source_directory -t target_directory --min 1 --max 
 ```
 
 
-min - the smallest ngram to generate, default is 1 (i.e. unigram)
-max - the largesest ngram to generate, default is 3 (i.e. trigram)
-nc - number of cores to use, default is 1
-clean - using this flag will lowercase text and remove punctuation and digits
-stem - using this flag will stem words
-stop - using this flag will remove common stop words
+* min - the smallest ngram to generate, default is 1 (i.e. unigram)
+* max - the largesest ngram to generate, default is 3 (i.e. trigram)
+* nc - number of cores to use, default is 1
+* clean - using this flag will lowercase text and remove punctuation and digits
+* stem - using this flag will stem words
+* stop - using this flag will remove common stop words
 
 For each file in the source directory, the script will output a file in the target directory.
 
