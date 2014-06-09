@@ -28,7 +28,7 @@ if not os.path.isdir(args.dst):
 
 if args.stop:
     with open('stopwords.txt', 'rb') as f:
-        stopwords = f.replace('\r', '').split('\n')
+        stopwords = f.read().replace('\r', '').split('\n')
 else:
     stopwords = []
 
@@ -103,3 +103,6 @@ processes.append(job_server.submit(create_ngram,
 job_server.wait('default')
 
 print 'done'
+
+for p in processes:
+    print p.sresult
